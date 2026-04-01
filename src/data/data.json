@@ -1,0 +1,211 @@
+{
+  "bio": {
+    "name": "Sanmit Suthar",
+    "designation": [
+      "Full Stack Developer",
+      "Problem Solver",
+      "Photographer",
+      "Cinematographer",
+      "Creative Designer"
+    ],
+    "description": "Hi..!! 👋🏻 Sanmit here",
+    "about": [
+      "Computer Engineering student with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.",
+      "Experienced in Business Central AL language and Dynamics 365 solutions, including an internship at TripearlTech Private Limited.",
+      "I have also worked on frontend technologies (HTML5, CSS3, tailwind, JavaScript, React JS and other JS libraries) and backend technologies (Node.js and Express.js) for several projects. Additionally, I have expertise in Data Structures and Algorithms (DSA) in Java.",
+      "Aspiring for a challenging career in Software Development to leverage my skills and experience for the best results."
+    ],
+    "github": "https://github.com/Sanmit0804",
+    "linkedin": "https://www.linkedin.com/in/sanmitsuthar/",
+    "twitter": "https://x.com/Sanmit0804",
+    "email": "sanmitsuthar3@gmail.com"
+  },
+  "education": [
+    {
+      "degree": "BE Computer Engineering",
+      "institution": "Sardar Vallabhbhai Institute of Technology, Vasad",
+      "year": "2020 - 2024",
+      "description": "",
+      "link": "https://www.svitvasad.ac.in/"
+    },
+    {
+      "degree": "HSC",
+      "institution": "Parth School of Science and Competition",
+      "year": "2018 - 2020",
+      "description": "",
+      "link": "https://www.parthschool.org/"
+    },
+    {
+      "degree": "SSC",
+      "institution": "Utkarsh Vidhyalaya",
+      "year": "2018",
+      "description": "",
+      "link": "https://utkarshvidyalaya.org/"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Dream Click",
+      "description": "A full-stack media-sharing platform for high-resolution photos, sample videos, and paid VN editing templates.",
+      "image": "/projects/DreamClick.png",
+      "tags": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Tailwind CSS",
+        "ShadCn UI",
+        "JWT",
+        "Razorpay",
+        "AWS S3"
+      ],
+      "demo": "https://github.com/Sanmit0804/DreamClick",
+      "code": "https://github.com/Sanmit0804/DreamClick",
+      "major": true
+    },
+    {
+      "title": "Foodie",
+      "description": "A full-featured food delivery application offering user registration, authentication, and seamless order management.",
+      "image": "/projects/Foodie.png",
+      "tags": [
+        "React.js",
+        "Express.js",
+        "Node.js",
+        "MongoDB"
+      ],
+      "demo": "https://foodie-frontend-fc54.onrender.com/",
+      "code": "https://github.com/Sanmit0804/Foodie",
+      "major": true
+    },
+    {
+      "title": "FastFingers",
+      "description": "A dynamic typing test application that improves typing speed and accuracy. Built with JavaScript, \"FastFinger\" provides random text challenges and measures WPM and accuracy.",
+      "image": "/projects/FastFingers.jpg",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "demo": "https://sanmit0804.github.io/FastFingers/FastFingers/",
+      "code": "https://github.com/Sanmit0804/FastFingers",
+      "major": false
+    },
+    {
+      "title": "Thoughts - Your SocialApp",
+      "description": "Thoughts is a social media application where users can register, log in, create posts, like posts, and update their profiles. This application is built using Node.js, Express, and MongoDB..",
+      "image": "/projects/Thoughts.png",
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "EJS",
+        "bcrypt",
+        "JWT",
+        "Multer"
+      ],
+      "demo": "https://thoughts-your-social-app.vercel.app/",
+      "code": "https://github.com/Sanmit0804/Thoughts-YourSocialApp",
+      "major": true
+    },
+    {
+      "title": "Discord - Bot",
+      "description": "Discord bot built using Node.js and the discord.js library. The bot offers a variety of functionalities to enhance your server experience, including (replace with specific functionalities your bot offers, e.g., moderation tools, fun commands, integration with other services).",
+      "image": "/projects/Discord.png",
+      "tags": [
+        "Node.js",
+        "Discord.js"
+      ],
+      "demo": "https://github.com/Sanmit0804/Discord-Bot",
+      "code": "https://github.com/Sanmit0804/Discord-Bot",
+      "major": true
+    },
+    {
+      "title": "URL - Shortener",
+      "description": "This project is a simple URL shortener application built with Node.js and Express.js. It allows users to enter a long URL and generates a shortened version of it.",
+      "image": "/projects/URL.png",
+      "tags": [
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+      "demo": "https://github.com/Sanmit0804/URL-Shortener",
+      "code": "https://github.com/Sanmit0804/URL-Shortener",
+      "major": false
+    },
+    {
+      "title": "Weather App with Dynamic Background",
+      "description": "This weather application not only provides accurate weather information but also enhances user experience with dynamic background changes based on the selected city. The application is built using HTML, CSS, and JavaScript.",
+      "image": "/projects/WeatherApp.png",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "demo": "https://sanmit0804.github.io/Weather-Application-with-Dynamic-Background/",
+      "code": "https://github.com/Sanmit0804/Weather-Application-with-Dynamic-Background",
+      "major": false
+    },
+    {
+      "title": "Quiz Game",
+      "description": "Quiz application facilitates the creation of multiple-choice questions with four answer options. Users receive immediate feedback on their selections, with correct answers highlighted in green and incorrect ones in red. Upon completion, the application provides a final score.",
+      "image": "/projects/Quiz.png",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "demo": "https://sanmit0804.github.io/Quiz-Application/",
+      "code": "https://github.com/Sanmit0804/Quiz-Application",
+      "major": false
+    },
+    {
+      "title": "Todo List",
+      "description": "This To-Do List app lets users manage tasks by categories like Personal, Work, and Shopping. It includes interactive features for toggling categories, adding tasks, and displaying tasks with dynamic updates based on category selection.",
+      "image": "/projects/Todo.png",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "demo": "https://sanmit0804.github.io/Todo-List/",
+      "code": "https://github.com/Sanmit0804/Todo-List",
+      "major": false
+    }
+  ],
+  "skills": [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React / Next.js",
+    "Node.js / Express",
+    "Framer Motion",
+    "GSAP",
+    "Tailwind CSS",
+    "Java",
+    "DSA"
+  ],
+  "experience": [
+    {
+      "title": "Associate Software Engineer Intern",
+      "company": "ALOIS Solutions (AKINO LABS)",
+      "year": "April 2025 - Present",
+      "description": ""
+    },
+    {
+      "title": "MERN Developer Intern",
+      "company": "ALOIS Solutions",
+      "year": "October 2024 - March 2025",
+      "description": ""
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "TripearlTech Private Limited",
+      "year": "Jan 2024 - June 2024",
+      "description": ""
+    }
+  ],
+  "contact": {
+    "location": "India",
+    "email": "sanmitsuthar3@gmail.com",
+    "phone": "+91 9409531985"
+  }
+}

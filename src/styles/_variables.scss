@@ -1,0 +1,38 @@
+/* =========================================
+   LIQUID GLASS THEME SYSTEM
+   ========================================= */
+
+// Global Colors
+$color-bg-dark: #000000;
+$color-bg-light: #f5f5f7;
+$color-text-dark: #ffffff;
+$color-text-light: #1d1d1f;
+
+$color-accent: #3b82f6; // subtle blue for glowing/active states
+
+// Liquid Glass Tokens
+$glass-bg-dark: rgba(255, 255, 255, 0.03);
+$glass-bg-light: rgba(255, 255, 255, 0.6);
+
+$glass-border-dark: rgba(255, 255, 255, 0.08);
+$glass-border-light: rgba(0, 0, 0, 0.05);
+
+$glass-blur: 24px;
+$glass-blur-heavy: 48px;
+
+$glass-shadow-dark: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+$glass-shadow-light: 0 4px 24px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+
+// Spacing & Layout
+$spacing-unit: 8px;
+$border-radius-lg: 24px;
+$border-radius-md: 16px;
+$border-radius-sm: 8px;
+
+// Z-Index Layers
+$z-index-bg: -1;
+$z-index-base: 1;
+$z-index-glass: 10;
+$z-index-dock: 100;
+$z-index-lanyard: 1000;
+$z-index-transition: 9999;
