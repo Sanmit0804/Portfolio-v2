@@ -50,13 +50,13 @@ export default function AboutPage() {
     const currentY = e.touches[0].clientY;
     const deltaY = touchStartY.current - currentY;
     touchStartY.current = currentY;
-    
+
     const current = scrollTracker.get();
     scrollTracker.set(Math.max(0, Math.min(current + deltaY * 2.5, maxScroll)));
   };
 
   return (
-    <main 
+    <main
       className="relative w-full h-screen overflow-hidden bg-[#011c0d] text-white select-none"
       onWheel={handleWheel}
       onTouchStart={handleTouchStart}
@@ -65,16 +65,16 @@ export default function AboutPage() {
       {/* Real-time calculated hardware-accelerated canvas background */}
       <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
         <FramesRendering scrollProgress={springProgress} />
-        
+
         {/* Cinematic Vignette */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_10%,_#011c0d_90%)] mix-blend-multiply" />
         <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
       </div>
 
       {/* Text and CTAs perfectly centered and completely static */}
-      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 md:px-12 py-12 lg:py-0 overflow-y-auto lg:overflow-hidden touch-pan-y"
-           onPointerCancel={(e) => e.stopPropagation()}> 
-           {/* Add overflow-y on mobile if screen is incredibly tiny to ensure readability without breaking effect */}
+      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 md:px-12 py-12 pb-28 lg:py-0 lg:pb-0 overflow-y-auto lg:overflow-hidden touch-pan-y"
+        onPointerCancel={(e) => e.stopPropagation()}>
+        {/* Add overflow-y on mobile if screen is incredibly tiny to ensure readability without breaking effect */}
         <div className="w-full max-w-6xl mx-auto">
           {/* Page title */}
           <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-12">

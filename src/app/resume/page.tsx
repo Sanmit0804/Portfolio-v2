@@ -73,25 +73,25 @@ const ExperienceCard = ({ experience, index }: { experience: Experience; index: 
 
 const ResumeCard = () => {
   return (
-    <div className="liquid-glass p-6 sm:p-8 md:p-10 flex flex-col items-center gap-5 sm:gap-6 text-center w-full">
-      <div className="p-3 sm:p-4 rounded-full bg-blue-500/10 border border-blue-400/20">
-        <FileText className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-blue-400 opacity-80" />
+    <div className="liquid-glass p-5 sm:p-7 md:p-10 flex flex-col items-center gap-4 sm:gap-5 text-center w-full">
+      <div className="p-2.5 sm:p-3 md:p-4 rounded-full bg-blue-500/10 border border-blue-400/20">
+        <FileText className="w-7 h-7 sm:w-9 sm:h-9 md:w-12 md:h-12 text-blue-400 opacity-80" />
       </div>
       <div>
-        <h2 className="text-xl sm:text-2xl font-outfit font-semibold text-white/90 break-words px-2">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-outfit font-semibold text-white/90 break-words px-2">
           {data.bio.name}
         </h2>
-        <p className="text-xs sm:text-sm text-white/50 font-inter mt-2 break-words">
+        <p className="text-[11px] sm:text-sm text-white/50 font-inter mt-1.5 break-words">
           {data.bio.designation?.[0] || 'Professional'}
         </p>
       </div>
-      <p className="text-xs sm:text-sm text-white/50 font-inter leading-relaxed text-center px-2">
+      <p className="text-[11px] sm:text-sm text-white/50 font-inter leading-relaxed text-center px-2">
         Download or view my full resume to learn more about my experience, education, and skills.
       </p>
       <a
         href="/assets/resume.pdf"
         download
-        className="liquid-glass text-nowrap flex gap-3 items-center p-4 rounded-full hover:bg-white/10 hover:border-white/20 transition-colors text-white/50 hover:text-white"
+        className="liquid-glass text-nowrap flex gap-2 sm:gap-3 items-center p-3 sm:p-4 rounded-full hover:bg-white/10 hover:border-white/20 transition-colors text-white/50 hover:text-white"
       >
         <Download className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 group-hover:-translate-y-0.5 transition-transform" />
         <span className="font-outfit font-medium text-white/90 text-sm sm:text-base">Download Resume</span>
@@ -104,30 +104,30 @@ export default function ResumePage() {
   const experiences: Experience[] = data.experience || [];
 
   return (
-    <main className="relative min-h-screen w-full bg-black text-white overflow-x-hidden pb-20 sm:pb-24 md:pb-28 flex flex-col">
+    <main className="relative min-h-screen w-full bg-black text-white overflow-x-hidden pb-24 sm:pb-24 md:pb-28 flex flex-col">
       {/* Background gradient - responsive positioning */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.08)_0%,_transparent_60%)] pointer-events-none" />
 
       {/* Animated grid pattern - adjusted for mobile */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] pointer-events-none" />
 
-      <div className="w-full max-w-6xl mx-auto px-5 sm:px-8 md:px-12 pt-20 sm:pt-24 flex-grow flex flex-col">
-        {/* Header - responsive spacing and text sizing */}
-        <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-8 sm:mb-10 md:mb-12">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 pt-14 sm:pt-20 md:pt-24 flex-grow flex flex-col">
+        {/* Header */}
+        <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-6 sm:mb-8 md:mb-12">
           <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.35em] text-blue-400/80 font-inter">
             Credentials
           </span>
           <h1
             className="mt-2 sm:mt-3 font-outfit font-black tracking-tighter text-white leading-[1.1] sm:leading-none"
-            style={{ fontSize: 'clamp(2rem, 10vw, 5rem)' }}
+            style={{ fontSize: 'clamp(1.8rem, 9vw, 5rem)' }}
           >
             Resume
           </h1>
-          <div className="mt-3 sm:mt-4 h-[1px] w-16 sm:w-20 md:w-24 bg-gradient-to-r from-blue-500/50 to-transparent" />
+          <div className="mt-3 sm:mt-4 h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-blue-500/50 to-transparent" />
         </motion.div>
 
-        {/* Content Grid - responsive columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
           {/* Left Column - Resume Download Card */}
           <motion.div
             variants={sectionVars}

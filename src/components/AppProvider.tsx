@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useDeviceType } from '@/hooks/useDeviceType';
 
 type Stage = 'preloading' | 'lanyard' | 'cinematic' | 'home';
 
@@ -14,11 +15,18 @@ interface AppContextProps {
 const AppContext = createContext<AppContextProps | null>(null);
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
+  const { isTouchDevice } = useDeviceType();
+
+  // Touch devices (mobile / tablet) skip the lanyard entirely — jump straight
+  // to 'home' so they never load the heavy WebGL physics scene.
   const [stage, setStage] = useState<Stage>('preloading');
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
-  // Trigger home stage automatically for testing purposes if you don't want to test the lanyard each time
-  // But since this is a production-grade portfolio, we follow the steps sequentially.
+  useEffect(() => {
+    if (isTouchDevice) {
+      setStage('home');
+    }
+  }, [isTouchDevice]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
