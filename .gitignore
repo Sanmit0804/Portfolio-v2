@@ -18,6 +18,7 @@
 /out/
 
 # production
+/src/data/data.json
 /build
 
 # misc
