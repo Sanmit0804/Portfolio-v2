@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import data from '@/data/data.json';
 import { Mail, MapPin, Send, GitBranch, Link, AtSign } from 'lucide-react';
 import dynamic from 'next/dynamic';
+import ThreadsBackground from '@/components/ThreadsBackground';
 
 const VadodaraMap = dynamic(() => import('@/components/VadodaraMap'), {
   ssr: false,
@@ -13,6 +14,7 @@ const VadodaraMap = dynamic(() => import('@/components/VadodaraMap'), {
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen w-full bg-black text-white overflow-hidden flex flex-col justify-between pb-24 md:pb-28">
+      <ThreadsBackground />
       <div className="absolute bottom-0 right-0 w-[60vw] h-[60vw] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-0 left-0 w-[40vw] h-[40vw] bg-blue-900/8 rounded-full blur-[120px] pointer-events-none" />
 

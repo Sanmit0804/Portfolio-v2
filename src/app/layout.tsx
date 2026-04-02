@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter, Outfit } from 'next/font/google';
+import { Inter, Outfit, Geist } from 'next/font/google';
 import './globals.scss';
+import './shadcn.css';
 import { AppProvider } from '@/components/AppProvider';
 import NavigationDock from '@/components/NavigationDock';
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
@@ -15,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="dark" className={cn("font-sans", geist.variable)}>
       <body className={`${inter.variable} ${outfit.variable} font-sans bg-black text-white antialiased`}>
         <AppProvider>
           {children}

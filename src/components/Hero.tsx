@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { useAppContext } from '@/components/AppProvider';
 import RotatingText from './RotatingText';
 import data from '@/data/data.json';
+import BorderGlow from '@/components/ui/BorderGlow';
+import { Star } from 'lucide-react';
 
 export default function Hero() {
   const { stage } = useAppContext();
@@ -38,7 +40,10 @@ export default function Hero() {
       </div>
 
       {/* ── CINEMATIC TEXT — fixed bottom-left ── */}
-      <div className="relative z-10 flex flex-col gap-4 pb-24 pl-8 sm:pl-12 md:pl-20 max-w-4xl">
+      <div
+        className="relative z-10 flex flex-col gap-4 pb-36 sm:pb-32 md:pb-24 pl-8 sm:pl-12 md:pl-20 max-w-4xl"
+        style={{ paddingBottom: 'calc(9rem + env(safe-area-inset-bottom, 0px))' }}
+      >
 
         {/* Stagger in each line from bottom */}
         <motion.div
@@ -67,7 +72,22 @@ export default function Hero() {
           <RotatingText items={data.bio.designation} />
         </motion.div>
 
+
+
       </div>
+
+      {/* ── BORDER GLOW CTA — top-right, laptop/desktop only ── */}
+      <motion.div
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 1.2 }}
+        className="hidden md:flex absolute top-6 right-6 z-20"
+      >
+        <BorderGlow href="https://github.com/Sanmit0804/Portfolio-v2">
+          <Star className="w-3.5 h-3.5 text-yellow-300" fill="currentColor" />
+          Star on GitHub
+        </BorderGlow>
+      </motion.div>
 
       {/* ── SCROLL / ENTER hint when live ── */}
       <motion.div

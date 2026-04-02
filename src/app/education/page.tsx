@@ -4,6 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import data from '@/data/data.json';
 import { GraduationCap, CalendarDays, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import ThreadsBackground from '@/components/ThreadsBackground';
 
 const pageVars: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -23,6 +24,7 @@ const card: Variants = {
 export default function EducationPage() {
   return (
     <main className="relative min-h-screen w-full bg-black text-white overflow-y-auto overflow-x-hidden pb-24 md:pb-28">
+      <ThreadsBackground />
       {/* Ambient glow */}
       <div className="absolute bottom-1/3 right-1/4 w-[50vw] h-[50vw] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute top-0 left-1/4 w-[30vw] h-[30vw] bg-blue-800/5 rounded-full blur-[100px] pointer-events-none" />
@@ -51,7 +53,7 @@ export default function EducationPage() {
                 href={edu.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block liquid-glass p-5 sm:p-6 md:p-7 hover:border-white/25 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                className="backdrop-blur-sm group block liquid-glass p-5 sm:p-6 md:p-7 hover:border-white/25 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
               >
                 {/* Top row: icon + degree + year */}
                 <div className="flex items-start justify-between gap-3 sm:gap-4">

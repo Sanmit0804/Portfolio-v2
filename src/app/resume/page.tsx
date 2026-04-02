@@ -4,6 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import data from '@/data/data.json';
 import { FileText, Download, Briefcase, Calendar, Building2, ChevronRight, ExternalLink } from 'lucide-react';
+import ThreadsBackground from '@/components/ThreadsBackground';
 
 const pageVars: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -32,7 +33,7 @@ const ExperienceCard = ({ experience, index }: { experience: Experience; index: 
     <motion.div
       variants={itemVars}
       custom={index}
-      className="group relative p-5 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
+      className="group relative p-4 sm:p-5 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
     >
       {/* Gradient hover effect */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/0 via-blue-500/0 to-blue-500/0 group-hover:from-blue-500/5" />
@@ -73,7 +74,7 @@ const ExperienceCard = ({ experience, index }: { experience: Experience; index: 
 
 const ResumeCard = () => {
   return (
-    <div className="liquid-glass p-5 sm:p-7 md:p-10 flex flex-col items-center gap-4 sm:gap-5 text-center w-full">
+    <div className="liquid-glass p-4 sm:p-5 backdrop-blur-sm md:p-7 flex flex-col items-center gap-3 sm:gap-4 text-center w-full">
       <div className="p-2.5 sm:p-3 md:p-4 rounded-full bg-blue-500/10 border border-blue-400/20">
         <FileText className="w-7 h-7 sm:w-9 sm:h-9 md:w-12 md:h-12 text-blue-400 opacity-80" />
       </div>
@@ -104,16 +105,17 @@ export default function ResumePage() {
   const experiences: Experience[] = data.experience || [];
 
   return (
-    <main className="relative min-h-screen w-full bg-black text-white overflow-x-hidden pb-24 sm:pb-24 md:pb-28 flex flex-col">
+    <main className="relative min-h-screen w-full bg-black text-white overflow-x-hidden pb-28 md:pb-32 flex flex-col">
+      <ThreadsBackground />
       {/* Background gradient - responsive positioning */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,130,246,0.08)_0%,_transparent_60%)] pointer-events-none" />
 
       {/* Animated grid pattern - adjusted for mobile */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] pointer-events-none" />
 
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 pt-14 sm:pt-20 md:pt-24 flex-grow flex flex-col">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 pt-12 sm:pt-16 md:pt-20 flex-grow flex flex-col">
         {/* Header */}
-        <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-6 sm:mb-8 md:mb-12">
+        <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-4 sm:mb-6 md:mb-8">
           <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.35em] text-blue-400/80 font-inter">
             Credentials
           </span>
@@ -127,7 +129,7 @@ export default function ResumePage() {
         </motion.div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
           {/* Left Column - Resume Download Card */}
           <motion.div
             variants={sectionVars}
@@ -145,9 +147,9 @@ export default function ResumePage() {
             initial="hidden"
             animate="show"
             transition={{ delay: 0.3 }}
-            className="space-y-5 sm:space-y-6"
+            className="space-y-3 sm:space-y-4"
           >
-            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
               <div className="h-px flex-1 bg-gradient-to-r from-blue-500/30 to-transparent" />
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.35em] text-blue-400/80 font-inter flex items-center gap-1.5 sm:gap-2 whitespace-nowrap">
                 <Briefcase className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
@@ -158,7 +160,7 @@ export default function ResumePage() {
             </div>
 
             {experiences.length > 0 ? (
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-2 sm:space-y-3">
                 {experiences.map((exp, idx) => (
                   <ExperienceCard key={idx} experience={exp} index={idx} />
                 ))}
@@ -196,7 +198,7 @@ export default function ResumePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10"
+          className="mt-5 sm:mt-7 pt-4 sm:pt-5 border-t border-white/10"
         >
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/40 font-inter">
             <div className="flex items-center gap-2">
