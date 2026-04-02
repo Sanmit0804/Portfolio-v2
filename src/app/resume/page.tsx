@@ -61,11 +61,11 @@ const ExperienceCard = ({ experience, index }: { experience: Experience; index: 
           </div>
         </div>
 
-        {experience.description && (
+        {/* {experience.description && (
           <p className="text-white/60 font-inter text-xs sm:text-sm leading-relaxed pl-9 sm:pl-11 break-words">
             {experience.description}
           </p>
-        )}
+        )} */}
       </div>
     </motion.div>
   );

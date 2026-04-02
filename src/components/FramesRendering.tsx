@@ -89,8 +89,8 @@ export default function FramesRendering({ scrollProgress }: FramesRenderingProps
       offsetX = (rect.width - drawWidth) / 2;
     }
 
-    // Deep forest green background as requested
-    ctx.fillStyle = '#011c0d'; 
+    // Deep black background
+    ctx.fillStyle = '#000000'; 
     ctx.fillRect(0, 0, rect.width, rect.height);
     
     ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);

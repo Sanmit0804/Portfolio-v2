@@ -10,9 +10,9 @@
     ],
     "description": "Hi..!! 👋🏻 Sanmit here",
     "about": [
-      "Computer Engineering student with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.",
-      "Experienced in Business Central AL language and Dynamics 365 solutions, including an internship at TripearlTech Private Limited.",
-      "I have also worked on frontend technologies (HTML5, CSS3, tailwind, JavaScript, React JS and other JS libraries) and backend technologies (Node.js and Express.js) for several projects. Additionally, I have expertise in Data Structures and Algorithms (DSA) in Java.",
+      "Computer Engineering graduate with a passion for coding and problem-solving, seeking to apply my technical skills and creativity to real-world projects.",
+      "Experienced in full-stack development, specializing in the MERN stack. Currently working as an Associate Software Engineer at ALOIS Solutions (AKINO LABS), where I own end-to-end development of core modules for an in-house HRMS platform.",
+      "Proficient in frontend technologies (React.js, TypeScript, SCSS, Bootstrap, Tailwind) and backend technologies (Node.js, Express.js, MongoDB). Skilled in building REST APIs, optimizing performance, and implementing RBAC.",
       "Aspiring for a challenging career in Software Development to leverage my skills and experience for the best results."
     ],
     "location": "Vadodara",
@@ -24,36 +24,37 @@
   "education": [
     {
       "degree": "BE Computer Engineering",
-      "institution": "Sardar Vallabhbhai Institute of Technology, Vasad",
+      "institution": "Sardar Vallabhbhai Patel Institute of Technology, Vasad",
       "year": "2020 - 2024",
-      "description": "",
+      "description": "CGPA: 7.79/10",
       "link": "https://www.svitvasad.ac.in/"
     },
     {
       "degree": "HSC",
       "institution": "Parth School of Science and Competition",
       "year": "2018 - 2020",
-      "description": "",
+      "description": "69.69%",
       "link": "https://www.parthschool.org/"
     },
     {
       "degree": "SSC",
       "institution": "Utkarsh Vidhyalaya",
       "year": "2018",
-      "description": "",
+      "description": "84.3%",
       "link": "https://utkarshvidyalaya.org/"
     }
   ],
   "projects": [
     {
       "title": "Dream Click",
-      "description": "A full-stack media-sharing platform for high-resolution photos, sample videos, and paid VN editing templates.",
+      "description": "A full-stack media-sharing platform for high-resolution photos, sample videos, and paid VN editing templates. Supports free browsing without authentication; email required only during template purchase. Integrated Razorpay for payment processing and automated email delivery with QR code generation.",
       "image": "/projects/DreamClick.png",
       "tags": [
         "MongoDB",
         "Express.js",
         "React.js",
         "Node.js",
+        "TypeScript",
         "Tailwind CSS",
         "ShadCn UI",
         "JWT",
@@ -66,21 +67,38 @@
     },
     {
       "title": "Foodie",
-      "description": "A full-featured food delivery application offering user registration, authentication, and seamless order management.",
+      "description": "A full-featured food delivery application offering user registration, authentication, and seamless order management. Includes separate user and admin interfaces, shopping cart functionality, order placement, toast notifications, and error handling.",
       "image": "/projects/Foodie.png",
       "tags": [
         "React.js",
         "Express.js",
         "Node.js",
-        "MongoDB"
+        "MongoDB",
+        "JWT"
       ],
       "demo": "https://foodie-frontend-fc54.onrender.com/",
       "code": "https://github.com/Sanmit0804/Foodie",
       "major": true
     },
     {
+      "title": "Thoughts",
+      "description": "A full-featured social media application enabling users to register, authenticate, and manage their posts seamlessly. Includes post creation/deletion, profile management, and social interactions like likes/dislikes and comments.",
+      "image": "/projects/Thoughts.png",
+      "tags": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Multer"
+      ],
+      "demo": "https://thoughts-your-social-app.vercel.app/",
+      "code": "https://github.com/Sanmit0804/Thoughts-YourSocialApp",
+      "major": true
+    },
+    {
       "title": "FastFingers",
-      "description": "A dynamic typing test application that improves typing speed and accuracy. Built with JavaScript, \"FastFinger\" provides random text challenges and measures WPM and accuracy.",
+      "description": "A dynamic typing test application that improves typing speed and accuracy. Built with JavaScript, \"FastFingers\" provides random text challenges and measures WPM and accuracy.",
       "image": "/projects/FastFingers.jpg",
       "tags": [
         "HTML5",
@@ -92,25 +110,8 @@
       "major": false
     },
     {
-      "title": "Thoughts - Your SocialApp",
-      "description": "Thoughts is a social media application where users can register, log in, create posts, like posts, and update their profiles. This application is built using Node.js, Express, and MongoDB..",
-      "image": "/projects/Thoughts.png",
-      "tags": [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "EJS",
-        "bcrypt",
-        "JWT",
-        "Multer"
-      ],
-      "demo": "https://thoughts-your-social-app.vercel.app/",
-      "code": "https://github.com/Sanmit0804/Thoughts-YourSocialApp",
-      "major": true
-    },
-    {
       "title": "Discord - Bot",
-      "description": "Discord bot built using Node.js and the discord.js library. The bot offers a variety of functionalities to enhance your server experience, including (replace with specific functionalities your bot offers, e.g., moderation tools, fun commands, integration with other services).",
+      "description": "Discord bot built using Node.js and the discord.js library. The bot offers a variety of functionalities to enhance your server experience.",
       "image": "/projects/Discord.png",
       "tags": [
         "Node.js",
@@ -122,7 +123,7 @@
     },
     {
       "title": "URL - Shortener",
-      "description": "This project is a simple URL shortener application built with Node.js and Express.js. It allows users to enter a long URL and generates a shortened version of it.",
+      "description": "A simple URL shortener application built with Node.js and Express.js. Allows users to enter a long URL and generates a shortened version of it.",
       "image": "/projects/URL.png",
       "tags": [
         "Node.js",
@@ -135,7 +136,7 @@
     },
     {
       "title": "Weather App with Dynamic Background",
-      "description": "This weather application not only provides accurate weather information but also enhances user experience with dynamic background changes based on the selected city. The application is built using HTML, CSS, and JavaScript.",
+      "description": "This weather application not only provides accurate weather information but also enhances user experience with dynamic background changes based on the selected city.",
       "image": "/projects/WeatherApp.png",
       "tags": [
         "HTML5",
@@ -148,7 +149,7 @@
     },
     {
       "title": "Quiz Game",
-      "description": "Quiz application facilitates the creation of multiple-choice questions with four answer options. Users receive immediate feedback on their selections, with correct answers highlighted in green and incorrect ones in red. Upon completion, the application provides a final score.",
+      "description": "Quiz application that facilitates the creation of multiple-choice questions with four answer options. Users receive immediate feedback on their selections and a final score upon completion.",
       "image": "/projects/Quiz.png",
       "tags": [
         "HTML5",
@@ -161,7 +162,7 @@
     },
     {
       "title": "Todo List",
-      "description": "This To-Do List app lets users manage tasks by categories like Personal, Work, and Shopping. It includes interactive features for toggling categories, adding tasks, and displaying tasks with dynamic updates based on category selection.",
+      "description": "A To-Do List app that lets users manage tasks by categories like Personal, Work, and Shopping. Includes interactive features for toggling categories, adding tasks, and displaying tasks with dynamic updates.",
       "image": "/projects/Todo.png",
       "tags": [
         "HTML5",
@@ -174,34 +175,43 @@
     }
   ],
   "skills": [
+    "Java",
     "JavaScript (ES6+)",
     "TypeScript",
-    "React / Next.js",
-    "Node.js / Express",
-    "Framer Motion",
-    "GSAP",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
     "Tailwind CSS",
-    "Java",
-    "DSA"
+    "SCSS",
+    "Bootstrap",
+    "Redux Toolkit",
+    "GIT",
+    "GitHub",
+    "Postman",
+    "Jenkins",
+    "AWS (S3, EC2)",
+    "REST APIs",
+    "Data Structures & Algorithms"
   ],
   "experience": [
     {
       "title": "Associate Software Engineer",
       "company": "ALOIS Solutions (AKINO LABS)",
       "year": "April 2025 - Present",
-      "description": ""
+      "description": "Own end-to-end development of core modules for an in-house HRMS platform using the MERN stack. Designed and shipped full-stack features including Role-Based Access Control (RBAC), Performance Management (PMS), Attendance, Post Feed with interactions, and leave workflows. Architected and developed 30+ REST APIs with clean schema design, request validation, and modular controller structure using Express.js. Improved MongoDB query performance by adding indexes on critical collections, significantly reducing response times for attendance and feed modules. Enhanced user experience through Abort Controller, preventing unwanted network calls, reducing race conditions in UI state, and improving perceived app responsiveness. Built reusable UI components from Figma designs, ensuring responsiveness and cross-browser compatibility using SCSS and Bootstrap. Delivered a 25% reduction in page load time by profiling React components, optimizing re-renders, and using memorization/selectors in Redux Toolkit. Integrated MiniO for secure file storage and optimized upload handling with AWS S3 compatibility. Led code reviews, documented API contracts, and supported production release cycles in Agile environments. Resolved 200+ bugs across front-end and back-end, improving overall platform stability and user experience."
     },
     {
       "title": "MERN Developer Intern",
       "company": "ALOIS Solutions",
       "year": "October 2024 - March 2025",
-      "description": ""
+      "description": "Developed and optimized full-stack modules for a scalable Human Resource Management System (HRMS) using the MERN stack. Implemented key features including user management, role-based access control (RBAC), post feed with likes and comments, and password recovery. Transformed Figma designs into responsive, cross-browser compatible front-end components using React.js, SCSS, and Bootstrap. Built and consumed RESTful APIs using Express.js and Axios to support dynamic data-driven operations. Leveraged Redux Toolkit for efficient state management, improving app responsiveness and modularity. Enhanced UI performance, achieving a 25% improvement in page load speed by profiling and optimizing React components. Integrated MiniO for secure and scalable file storage. Actively contributed to Agile sprints, feature planning, code reviews, and bug fixing for production-ready deployment."
     },
     {
       "title": "Software Engineer Intern",
       "company": "TripearlTech Private Limited",
       "year": "Jan 2024 - June 2024",
-      "description": ""
+      "description": "Experienced in Business Central AL language and Dynamics 365 solutions."
     }
   ],
   "contact": {
