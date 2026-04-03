@@ -18,6 +18,9 @@ export default function ContactPage() {
       <div className="absolute bottom-0 right-0 w-[60vw] h-[60vw] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-0 left-0 w-[40vw] h-[40vw] bg-blue-900/8 rounded-full blur-[120px] pointer-events-none" />
 
+      {/* Animated grid pattern - adjusted for mobile */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] pointer-events-none" />
+
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 flex flex-col items-start gap-12 flex-grow">
 
         <motion.div

@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Home, User, GraduationCap, Briefcase, FileText, Mail } from 'lucide-react';
+import { Home, User, GraduationCap, Briefcase, FileText, Mail, Gamepad2 } from 'lucide-react';
 import { useAppContext } from './AppProvider';
 import { useDeviceType } from '@/hooks/useDeviceType';
 
@@ -15,6 +15,7 @@ const DOCK_ITEMS = [
   { id: 'projects',  icon: Briefcase,     label: 'Projects',  href: '/projects'  },
   { id: 'resume',    icon: FileText,      label: 'Resume',    href: '/resume'    },
   { id: 'contact',   icon: Mail,          label: 'Contact',   href: '/contact'   },
+  { id: 'game',      icon: Gamepad2,      label: 'Game',      href: '/game'      },
 ];
 
 export default function NavigationDock() {
@@ -50,7 +51,7 @@ export default function NavigationDock() {
           className="liquid-glass flex items-center gap-1 px-3 py-2 shadow-[0_-6px_24px_-8px_rgba(0,0,0,0.5)]"
           style={{ paddingBottom: 'max(8px, env(safe-area-inset-bottom, 8px))' }}
         >
-          {DOCK_ITEMS.map((item) => (
+          {DOCK_ITEMS.filter(item => item.id !== 'game').map((item) => (
             <MobileTabItem
               key={item.id}
               icon={item.icon}

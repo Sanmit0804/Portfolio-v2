@@ -46,6 +46,9 @@ export default function ProjectsPage() {
       <ThreadsBackground />
       <div className="absolute top-1/4 right-1/4 w-[45vw] h-[45vw] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none" />
 
+      {/* Animated grid pattern - adjusted for mobile */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] pointer-events-none" />
+
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-12 pt-16 sm:pt-20 md:pt-24">
 
         <motion.div variants={pageVars} initial="hidden" animate="show" className="mb-8 sm:mb-10 md:mb-12">

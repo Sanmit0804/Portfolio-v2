@@ -41,8 +41,8 @@ export default function Hero() {
 
       {/* ── CINEMATIC TEXT — fixed bottom-left ── */}
       <div
-        className="relative z-10 flex flex-col gap-4 pb-36 sm:pb-32 md:pb-24 pl-8 sm:pl-12 md:pl-20 max-w-4xl"
-        style={{ paddingBottom: 'calc(9rem + env(safe-area-inset-bottom, 0px))' }}
+        className="relative z-10 flex flex-col gap-4 pb-24 sm:pb-32 md:pb-24 pl-8 sm:pl-12 md:pl-20 max-w-4xl"
+        style={{ paddingBottom: 'calc(6rem + env(safe-area-inset-bottom, 0px))' }}
       >
 
         {/* Stagger in each line from bottom */}
