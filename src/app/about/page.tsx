@@ -7,12 +7,22 @@ import FramesRendering from '@/components/FramesRendering';
 import BlurText from '@/components/animations/BlurText';
 import Link from 'next/link';
 import Button from '@/components/ui/Button';
+import PhotographyShowcase from '@/components/PhotographyShowcase';
+import { useRef } from 'react';
 
 export default function AboutPage() {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const techArsenalRef = useRef<HTMLElement>(null);
+  
   const { scrollY, scrollYProgress } = useScroll();
   const scrollIndicatorOpacity = useTransform(scrollY, [0, 50], [1, 0]);
 
-  const springProgress = useSpring(scrollYProgress, {
+  const { scrollYProgress: contentProgress } = useScroll({
+    target: contentRef,
+    offset: ["start start", "end end"]
+  });
+
+  const springProgress = useSpring(contentProgress, {
     stiffness: 45,
     damping: 35,
     mass: 1.2
@@ -23,9 +33,11 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="relative w-full bg-[#000000] text-white select-none font-inter overflow-x-hidden">
+    <main className="relative w-full bg-[#000000] text-white select-none font-inter">
       {/* Background Frame Sequence with Cinematic Scaling & Vignette */}
-      <div className="fixed inset-0 w-full h-screen z-0 pointer-events-none flex items-center justify-center bg-[#000000]">
+      <div 
+        className="fixed inset-0 w-full h-screen z-0 pointer-events-none flex items-center justify-center bg-[#000000]"
+      >
 
         {/* Scaled-down frame container to prevent pixelation issues on large screens.
             Added slight blur, contrast, and lowered saturation to make the low-res beautiful. */}
@@ -46,7 +58,8 @@ export default function AboutPage() {
 
       <div className="relative z-10 w-full flex flex-col" onPointerCancel={(e) => e.stopPropagation()}>
 
-        {/* --- SECTION 1: Welcome Hero --- */}
+        <div ref={contentRef} className="w-full flex flex-col">
+          {/* --- SECTION 1: Welcome Hero --- */}
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -177,8 +190,9 @@ export default function AboutPage() {
           </div>
         </motion.section>
 
-        {/* --- SECTION 3: Tech Stack & Contact --- */}
+        {/* --- SECTION 3: Tech Stack --- */}
         <motion.section
+          ref={techArsenalRef}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -223,6 +237,10 @@ export default function AboutPage() {
 
           </div>
         </motion.section>
+        </div>
+
+        {/* --- SECTION 4: Photography Showcase --- */}
+        <PhotographyShowcase />
 
       </div>
 
